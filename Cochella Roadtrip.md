@@ -1,0 +1,44 @@
+Cochella Roadtrip
+
+You and your BFF are going to  ultimate boho-girl music festival "Cochella".
+Recently your grandfather gave you his mint 70's VW camper bus. Talk about the 
+ultimate accessory for the hotest weekend! The quest for accquiring the most 
+inspirational outfit and experience, takes place over the course of a day. 
+Stay with-in budget, and get through the first exciting day in style. 
+
+WIN: finish with $$$ in your pocket 
+//limit the cards to between 10-15
+LOSE: run out of cash, or
+      see someone in your EXACT outfit (gasp!)
+
+******************************************************************
+MoSCoW:
+
+  *Must have-Minimum Usable Subset
+    .great images of products or supporting images of card story
+    .choice of 2 buttons    
+        clever, funny, relevant words
+    .choices add or subtract from the $$ score
+    .visuals of Cochella in the Indio valley
+    .some obsticles to overcome
+    .5 to 7 cards per play cycle
+    . a win or lose finale based either $$ or the outfit seen on someone else
+
+  *Should have
+    .experience beyond shopping
+        --spin class
+        --coffee
+        --VW breakdown
+
+  *Could have
+    *sub-stories on a couple of cards
+    *8-12 cards per play cycle
+    *high score counter
+
+  *Won't have, but would like in the future
+    *animation of windmills or the ferris wheel
+**********************************************************************
+
+Psuedo code-
+
+start with the first card"  
