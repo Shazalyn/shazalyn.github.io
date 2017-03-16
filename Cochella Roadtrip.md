@@ -1,6 +1,6 @@
 Cochella Roadtrip
 
-You and your BFF are going to  ultimate boho-girl music festival "Cochella".
+You and your BFF are going to the ultimate boho-girl music festival "Cochella".
 Recently your grandfather gave you his mint 70's VW camper bus. Talk about the 
 ultimate accessory for the hotest weekend! The quest for accquiring the most 
 inspirational outfit and experience, takes place over the course of a day. 
@@ -18,11 +18,11 @@ MoSCoW:
     .great images of products or supporting images of card story
     .choice of 2 buttons    
         clever, funny, relevant words
-    .choices add or subtract from the $$ score
+    .choices add or subtract from the $$budget score
     .visuals of Cochella in the Indio valley
-    .some obsticles to overcome
+    .some obsticles to overcome ie bus breakdown , accidently dropping molly
     .5 to 7 cards per play cycle
-    . a win or lose finale based either $$ or the outfit seen on someone else
+    .a win or lose finale based either $$ or the outfit seen on someone else
 
   *Should have
     .experience beyond shopping
