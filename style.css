@@ -1,5 +1,34 @@
-# {
-    background: url("background.jpg");
-    background-size: 1024px 1024px;
-    background-repeat: no-repeat;;
+a {
+
+}
+
+body  {
+
+}
+
+#ferris {
+  background-image: url(ferrisPalm.png) center center no-repeat;
+  background-size: contain;
+  float: left;
+  width: 75%;
+  width: 830px;
+  height: 740px;
+  background: red;
+  border: 5px solid black;
+  border-radius: 50px;
+}
+
+#ferris_img {
+  width: 740px;
+  height: 830px;
+}
+#product {
+  float: left;
+  width: 25%;
+  background-color: pink;
+  margin: 20px 0 5px 10px;
+  width: 250px;
+  height: 250px;
+  border:5px solid black;
+  border-radius: 50px;
 }

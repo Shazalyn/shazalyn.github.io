@@ -22,6 +22,8 @@ MoSCoW:
     .visuals of Cochella in the Indio valley
     .some obsticles to overcome ie bus breakdown , accidently dropping molly
     .5 to 7 cards per play cycle
+    .change the btn text color to black on clicking
+    .budget $ shake or jump on update
     .a win or lose finale based either $$ or the outfit seen on someone else
 
   *Should have
