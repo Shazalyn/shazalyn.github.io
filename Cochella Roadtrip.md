@@ -25,6 +25,8 @@ MoSCoW:
     .change the btn text color to black on clicking
     .budget $ shake or jump on update
     .a win or lose finale based either $$ or the outfit seen on someone else
+    .change the button color text to black upon clickinb
+    .move the money button when the game is over
 
   *Should have
     .experience beyond shopping
@@ -43,7 +45,7 @@ MoSCoW:
 
 Psuedo code-
 
-start with the first card-opening
+start with the first card-opening[0]
 click on awe~some or groovy--it doesnt matter which button selected in the mvp version, either send you to the next card via some nifty js/jquery action
   js goes into a random generator[for.each?] that picks a card to display from the array of possibilities 
     changes that are made:  
@@ -52,8 +54,8 @@ click on awe~some or groovy--it doesnt matter which button selected in the mvp v
         update the button captions for #button1 and #button2
         update the caption in the #caption_background
     repeat this for 4-5 times
-  after 4-5 tries, then go to the #clone div
+  after 4-5 tries, then go to the game over, and bounce the $000 money button
 
-
+Can I make something appear, or disappear? and what would that be
   **set up array with product pictures, button choices, caption changes, and budget changes
 
