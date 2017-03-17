@@ -3,73 +3,79 @@ a {
 }
 
 body  {
+  color: white;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+}
 
+#cochella_spash {
+  position: relative;
+  /*margin-top: -900px;*/
+/*  z-index: 3;
+*/  /*border: 3px dotted red;*/
+  background: url("cochellaSplash.png")
 }
 
 #ferris {
-/*  background-image: url(ferrisPalm.png) center center no-repeat;
-  background-size: contain;*/
-/*  background: url(images/ferrisPalm.png);*/
-  float: left;
+/*  float: left;*/
   width: 75%;
   width: 790px;
   height: 700px;
+  z-index: 0;
+  position: relative;
 /*  background: yellow;
 *//*  border: 5px solid black;
   border-radius: 50px;*/
 }
 
 #ferris_img {
-  width: 790px;
+  width: 99%;
   height: 700px;
   border: 5px solid black;
   border-radius: 58px;
   z-index: -1;
 }
 
+
 #caption_background {
-  margin: 100px auto;
-}
-
-#grey_transSquare {
-  height: 116px;
+  font-size: 2em;
+  padding-right: 2px;
+  height: 200px;
+  position: relative;
   width: 550px;
-  background-color: rgba(27, 25, 25, 0.6)
-  margin: 200px 0 0 0 ;
   border-radius: 20px;
-
+  margin: -340px auto;
+  text-align: center;
+/*  border:  10px dotted red;
+*/background-color: rgba(27, 25, 25, .5);
+  z-index: 2;
 }
+
 
 #product {
   float: left;
   width: 25%;
-/*  background-color: pink;*/
-  margin: 100px 0 5px 10px;
+  margin: 100px 0px 5px 10px;
   width: 400px;
   height: 400px;
 /*  border:5px solid black;
-  border-radius: 50px;*/
-}
+  border-radius: 50px;
+*/}
 #besties_img{
   width: 400px;
   height: 400px;
   border: 3px solid black;
   border-radius: 50px;
 }
-
-.btn-opt1 {
-  height:70px;
-  width:200px;
-  border: 3px solid black;
-  margin: 10px 5px 5px 5px;
-  background-color: green;
-
+.button_holder {
+  margin: 10px auto;
 }
 #button1 {
   height: 34px;
   width: 244px;
-  margin: 5px 5px 5px 10px;
-  background-color: yellow;
+  font-size: 1.3em;
+  margin: 10px 5px 5px 10px;
+  background-color: #95989a;
+  text-align: center;
   border-radius: 15px;
   border: 3px solid white;
   box-shadow: 0 8px 8px 0 grey;
@@ -78,17 +84,23 @@ body  {
 #button2 {
   height: 34px;
   width: 244px;
-  margin: 5px 5px 5px 10px;
-  background-color: pink;
+  font-size: 1.3em;
+  margin: 6px 5px 5px 10px;
+  background-color: #95989a;
   border-radius: 15px;
   border: 3px solid white;
   box-shadow: 0 8px 8px 0 grey;
+    text-align: center;
 }
 
 #money{
-  background-color: #8c8c8c;
+  background-color: #95989a;
+/*  font-family: Avenir, Arial, Helvetica;
+*/  margin: 6px 5px 5px 79px;
   height: 34px;
   width: 86px;
+  font-size: 1.3em;
+  text-align: justify;
   border-radius: 15px;
   border: 3px solid white;
   box-shadow: 0 8px 8px 0 grey;

@@ -43,4 +43,14 @@ MoSCoW:
 
 Psuedo code-
 
-start with the first card"  
+start with the first card-opening
+click on awe~some or groovy--it doesnt matter which button selected in the mvp version, either send you to the next card via some nifty js/jquery action
+  js goes into a random generator[for.each?] that picks a card to display from the array of possibilities 
+    changes that are made:  
+        update the product picture on the right in the product div/column
+        update the budget[#money] amount .text()
+        update the button captions for #button1 and #button2
+        update the caption in the #caption_background
+    repeat this for 4-5 times
+  after 4-5 tries, then go to the #clone div
+
