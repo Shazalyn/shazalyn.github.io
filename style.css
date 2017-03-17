@@ -7,13 +7,10 @@ body  {
   font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 
-#cochella_spash {
-  position: relative;
-  /*margin-top: -900px;*/
-/*  z-index: 3;
-*/  /*border: 3px dotted red;*/
-  background: url("cochellaSplash.png")
-}
+.col-md-8 {
+    left: 23px;
+  }
+
 
 #ferris {
 /*  float: left;*/
@@ -21,7 +18,7 @@ body  {
   width: 790px;
   height: 700px;
   z-index: 0;
-  position: relative;
+  position: absolute;
 /*  background: yellow;
 *//*  border: 5px solid black;
   border-radius: 50px;*/
@@ -33,11 +30,23 @@ body  {
   border: 5px solid black;
   border-radius: 58px;
   z-index: -1;
+  position: relative;
 }
 
+#road_trip {
+/*  top: 100px;
+*/  position: relative;
 
+
+    left: 450px;
+    bottom: 200px;
+    margin-bottom: 0px;
+    top: -100;
+    top: 0px;
+
+}
 #caption_background {
-  font-size: 2em;
+  font-size: 1.8em;
   padding-right: 2px;
   height: 200px;
   position: relative;
@@ -48,6 +57,43 @@ body  {
 /*  border:  10px dotted red;
 */background-color: rgba(27, 25, 25, .5);
   z-index: 2;
+  top: 100px;
+
+}
+
+#cochella_cont {
+  position: absolute;
+  z-index: 2;
+  width: 80%;
+  margin-bottom: 200px;
+/*  border: 4px dotted red;
+  border-bottom-width: 4px;
+*/height: 400px;
+/*bottom: 120px;
+margin-left: -30;*/
+  margin-right: 111px;
+  right: 83px;
+  bottom: 124px;
+}
+
+#cochella_spash {
+  position: relative;
+
+/*  width: 80%;
+*//*  margin-bottom: 200px;
+*/  /*display: block;*/
+  /*margin: 200 auto 0 auto;*/
+/*  z-index: 3;
+*//*  margin-top: -300px;
+*/
+  /*border: 3px dotted red;*/
+/*  background: url("cochellaSplash.png")
+*/}
+
+
+.col-md-4{
+  right: 27px;
+  top: 39px;
 }
 
 
@@ -66,8 +112,8 @@ body  {
   border: 3px solid black;
   border-radius: 50px;
 }
-.button_holder {
-  margin: 10px auto;
+#button_holder {
+    margin-left: 62px;
 }
 #button1 {
   height: 34px;
@@ -79,12 +125,14 @@ body  {
   border-radius: 15px;
   border: 3px solid white;
   box-shadow: 0 8px 8px 0 grey;
+  align-items: center;
 }
 
 #button2 {
   height: 34px;
   width: 244px;
   font-size: 1.3em;
+
   margin: 6px 5px 5px 10px;
   background-color: #95989a;
   border-radius: 15px;
@@ -95,9 +143,13 @@ body  {
 
 #money{
   background-color: #95989a;
+
+    margin-left: 91px;
+    margin-top: 6px;
+
 /*  font-family: Avenir, Arial, Helvetica;
-*/  margin: 6px 5px 5px 79px;
-  height: 34px;
+* margin: 6px 5px 5px 79px;
+*/  height: 34px;
   width: 86px;
   font-size: 1.3em;
   text-align: justify;

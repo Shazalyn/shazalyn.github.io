@@ -54,3 +54,6 @@ click on awe~some or groovy--it doesnt matter which button selected in the mvp v
     repeat this for 4-5 times
   after 4-5 tries, then go to the #clone div
 
+
+  **set up array with product pictures, button choices, caption changes, and budget changes
+
