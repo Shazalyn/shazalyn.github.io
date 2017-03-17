@@ -34,6 +34,14 @@ $(document).ready(function($) {
   // ['floral','images/floral.png',"sweet", "incredible", 800]
 
 
+
+let cardChance = Math.floor(Math.random() * ((cardInfo.length-1)-1)) + 1;
+
+
+
+
+
+
 // click on awe~some or groovy--it doesnt matter which button selected in the mvp version, either send you to the next card via some nifty js/jquery action
 var changeCards = function(){
 // on click event to button
@@ -42,11 +50,11 @@ var changeCards = function(){
       console.log(event)
 
       if(event.target.id === 'button1'){
-        event.target.innerText = cardInfo[i];
+        event.target.innerText = ("yeah"+ cardInfo.button1);
       }
 
     cardInfo.forEach(function(value, index) {
-      console.log(value.cardName);
+      console.log(value.button1);
     });
 
   })
