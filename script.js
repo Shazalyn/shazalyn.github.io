@@ -22,24 +22,20 @@ $(document).ready(function($) {
 
   var cardInfo = [];
   cardInfo.push({cardName:'start', cardImg:'images/bestieBus.png', button1:'awe~some', button2:'groovy', budgetAmt:1200});
-  cardInfo.push({cardName:'game_over',cardImg:'images/clone.png',button1:"unreal",
-  button2:"awkward", budgetAmt: 0});
-  cardInfo.push({cardName:'breakdown',cardImg:'images/pinkBus.png',button1:"bummer",
-    button2:"what-evahs",budgetAmt: 600});
-  cardInfo.push({cardName:'hair',cardImg:'images/mermaidHair.png',button1:"fantastic!",
-    button2: "not a priority",budgetAmt: 900});
+
+  cardInfo.push({cardName:'game_over',cardImg:'images/clone.png',button1:"unreal", button2:"awkward", budgetAmt: 0});
+
+  cardInfo.push({cardName:'breakdown',cardImg:'images/pinkBus.png',button1:"bummer",button2:"what-evahs",budgetAmt: 600});
+
+  cardInfo.push({cardName:'hair',cardImg:'images/mermaidHair.png',button1:"fantastic!",button2: "not a priority",budgetAmt: 900});
+
   cardInfo.push({cardName:'molly',cardImg:'images/pills.png',button1:
     "impaired",button2:"cured",budgetAmt: 400});
   // ['shorts','images/jeans.png',"jean shorts","cut-off mom jeans", 300],
   // ['floral','images/floral.png',"sweet", "incredible", 800]
 
 
-
 let cardChance = Math.floor(Math.random() * ((cardInfo.length-1)-1)) + 1;
-
-
-
-
 
 
 // click on awe~some or groovy--it doesnt matter which button selected in the mvp version, either send you to the next card via some nifty js/jquery action
