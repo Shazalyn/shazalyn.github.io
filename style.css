@@ -110,7 +110,7 @@ margin-left: -30;*/
   width: 400px;
   height: 400px;
   border: 3px solid black;
-  border-radius: 60px;
+  border-radius: 68px;
 }
 
 #game_over{
@@ -151,19 +151,21 @@ margin-left: -30;*/
 #money{
   background-color: #95989a;
 
-    margin-left: 91px;
+
+    margin-left: 11px;
+
     margin-top: 6px;
 
 /*  font-family: Avenir, Arial, Helvetica;
 * margin: 6px 5px 5px 79px;
 */  height: 34px;
-  width: 86px;
+  width: 234px;
   font-size: 1.3em;
-  text-align: justify;
-  border-radius: 15px;
+  text-align: center;
+  border-radius: none;
   border: 3px solid white;
-  box-shadow: 0 8px 8px 0 grey;
-}
+/*  box-shadow: 0 8px 8px 0 grey;
+*/}
 
 
 

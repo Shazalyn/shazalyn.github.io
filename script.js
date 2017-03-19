@@ -31,22 +31,34 @@ $(document).ready(function($) {
 
   cardArray.push({cardName:'molly',cardImg:'images/pills.png',button1:
     "impaired",button2:"cured",budgetAmt: 400, caption: "i am the caption for molly"});
-  // ['shorts','images/jeans.png',"jean shorts","cut-off mom jeans", 300, caption: "i am the caption for shorts"],
+// cardArray.push({cardName:'shorts','images/jeans.png',"jean shorts","cut-off mom jeans", 300, caption: "i am the caption for shorts"],
   // ['floral','images/floral.png',"sweet", "incredible", 800, caption: "i am the caption for floral"]
 
 
 // let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-1)) + 1;
-let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-2)) + 2;
 
 // click on awe~some or groovy--it doesnt matter which button selected in the mvp version, either send you to the next card via some nifty js/jquery action
 var changeCards = function(){
 // on click event to button
+var counter = 0;
   $btnAction.click(function(event){
       // console.log("Clicked!");
+
+let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-2)) + 2;
+  counter++;
       console.log(randCardIdx);
         console.log(cardArray[randCardIdx]);
 
-var card = cardArray[randCardIdx];
+  if(counter === 4 ){
+    var card = cardArray[1];
+// choice of game-over cards
+    $btnAction.off();
+    // add setTimeout here???
+    alert("you Lost :(");
+  } else {
+    var card = cardArray[randCardIdx];
+  }
+
     var newCaption = card.caption;
 
       console.log(newCaption);
@@ -67,18 +79,14 @@ var card = cardArray[randCardIdx];
 
     var budgetText = card.budgetAmt;
       console.log("money amount: ", budgetText);
-      $('#money').text("$ " + budgetText);
+      $('#money').text("budget left $ " + budgetText);
 
 
     var imgSrc = card.cardImg;
       var productImg = $('#product_img');
       productImg.attr("src", imgSrc);
 
-
-    // cardArray.forEach(function(value, index) {
-    //   console.log(value.button1);
-    // });
-
+cardArray.splice(randCardIdx,1);
   })
 // ??start throu gh the array of objects, then populate the html with the corrolating info
 
