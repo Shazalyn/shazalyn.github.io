@@ -23,9 +23,9 @@ $(document).ready(function($) {
   var cardArray = [];
   cardArray.push({cardName:'start', cardImg:'images/bestieBus.png', button1:'awe~some', button2:'groovy', budgetAmt:1200});
 
-  cardArray.push({cardName:'game_over',cardImg:'images/clone.png',button1:"YOU", button2:"LOSE", budgetAmt: " " + 0 + " you lose", caption: "You are rockin’ the on trend red 80’s crop T you scored from the swap meet at the Rose Bowl, paired with the  ultimate hip hugger denim shorts. OMG-your male dopplegänger just strolled by in EXACTLY the same outfit :|"});
+  cardArray.push({cardName:'game_over',cardImg:'images/clone.png',button1:"YOU", button2:"LOSE !!!", budgetAmt: " " + 0 + " you lose", caption: "You are rockin’ the on trend red 80’s crop T you scored from the swap meet at the Rose Bowl, paired with the  ultimate hip hugger denim shorts. OMG-your male dopplegänger just strolled by in EXACTLY the same outfit :|"});
 
-  cardArray.push({cardName:'bestest_outfit',cardImg:'images/bestOutfit.png',button1:"YOU WIN!!!", button2:"score", budgetAmt: 2100, caption: "Congrats!!!!! You made it throught the first day of Cochella in a great outfit, with no drama, no outfit twins & $$$ left over."});
+  cardArray.push({cardName:'bestest_outfit',cardImg:'images/bestOutfit.png',button1:"YOU", button2:"WIN !!!", budgetAmt: 2100, caption: "Congrats!!!!! You made it throught the first day of Cochella in a great outfit, with no drama, no outfit twins & $$$ left over."});
 
   cardArray.push({cardName:'breakdown',cardImg:'images/pinkBus.png',button1:"bummer",button2:"what-evahs",budgetAmt: 600, caption: "The Bus overheats just outside of Palm Springs. Spend 50% of your budget on car repairs. (WTF is an air-cooled engine, anyways?)"});
 
@@ -52,26 +52,29 @@ let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-3)) + 3;
       console.log(randCardIdx);
         console.log(cardArray[randCardIdx]);
 
-  if(counter === 2){
+// choice of game-over cards
+  if(counter === 5){
 //pick card index 1 0r 2 for game end
  var gameEnd = Math.floor((Math.random() * 2) + 1);
     var card = cardArray[gameEnd];
-    if(gameEnd === 1){
-// LOSE
-      $('button').fadeOut(6000);
-    } else {
-// WIN
-      $("#button_holder").animate({
-      right: '300px',
-      opacity: '1',
-      // height: '150px',
-      // width: '150px'
-      });
-}
-// choice of game-over cards
+          if(gameEnd === 1){
+      // LOSE
+            $('button').fadeOut(8000);
+          } else {
+      // WIN
+            $("#button_holder").animate({
+            right: '300px',
+            top: '33px',
+            opacity: '1',
+            height: '150px',
+            width: '150px'
+            });
+          $('button').fadeOut(10000);
+      }
     $btnAction.off();
+    // OLD FADE OUTON CLICK
     // $(".btn1").click(function(){
-        // $('button').fadeOut(10000);
+    //     $('button').fadeOut(10000);
     // });
     // add setTimeout here??? and nicer looking you lost.....
     // alert("you Lost :(");
