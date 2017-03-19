@@ -23,19 +23,22 @@ $(document).ready(function($) {
   var cardArray = [];
   cardArray.push({cardName:'start', cardImg:'images/bestieBus.png', button1:'awe~some', button2:'groovy', budgetAmt:1200});
 
-  cardArray.push({cardName:'game_over',cardImg:'images/clone.png',button1:"unreal", button2:"awkward", budgetAmt: 0, caption: "i am the caption for clone"});
+  cardArray.push({cardName:'game_over',cardImg:'images/clone.png',button1:"unreal", button2:"awkward", budgetAmt: 0, caption: "You are rockin’ the on trend red 80’s crop T you scored from the swap meet at the Rose Bowl, paired with the  ultimate hip hugger denim shorts. OMG-your male dopplegänger just strolled by in EXACTLY the same outfit :|"});
 
-  cardArray.push({cardName:'breakdown',cardImg:'images/pinkBus.png',button1:"bummer",button2:"what-evahs",budgetAmt: 600, caption: "i am the caption for breakdown"});
+  cardArray.push({cardName:'bestest_outfit',cardImg:'images/bestOutfit.png',button1:"primo", button2:"score", budgetAmt: 2100, caption: "Congrats!!!!! You made it throught the first day of Cochella in a great outfit, with no drama, no outfit twins & $$$ left over."});
 
-  cardArray.push({cardName:'hair',cardImg:'images/mermaidHair.png',button1:"fantastic!",button2: "not a priority",budgetAmt: 900, caption: "i am the caption for hair"});
+  cardArray.push({cardName:'breakdown',cardImg:'images/pinkBus.png',button1:"bummer",button2:"what-evahs",budgetAmt: 600, caption: "The Bus overheats just outside of Palm Springs. Spend 50% of your budget on car repairs. (WTF is an air-cooled engine, anyways?)"});
 
-  cardArray.push({cardName:'molly',cardImg:'images/pills.png',button1:
-    "impaired",button2:"cured",budgetAmt: 400, caption: "i am the caption for molly"});
-// cardArray.push({cardName:'shorts','images/jeans.png',"jean shorts","cut-off mom jeans", 300, caption: "i am the caption for shorts"],
-  // ['floral','images/floral.png',"sweet", "incredible", 800, caption: "i am the caption for floral"]
+  cardArray.push({cardName:'hair',cardImg:'images/mermaidHair.png',button1:"fantastic!",button2: "not a priority",budgetAmt: 900, caption: "Your long-time hair stylist has a last minute cancellation & offers extensions at co$t. MERMAID HAIR here I come !!!"});
+
+  cardArray.push({cardName:'molly',cardImg:'images/pills.png',button1:"impaired",button2:"cured",budgetAmt: 400, caption: "You have a bit of a headache from the kick-off party at the Tiki bar last night. Grab an aspirin from the Besties purse. OOPS — That wasn’t aspirin! "});
+
+cardArray.push({cardName:'shorts', cardImg:'images/jeans.png', button1: "jean shorts", button2: "cut-off mom jeans",budgetAmt: 300, caption: "Choices, choices, choices. Irony or the tried and true, blue standard?"});
+
+  cardArray.push({cardName: 'floral', cardImg: 'images/floral.png', button1: "sweet", button2:  "incredible", budgetAmt: 800, caption: "Pics of your girl-squad trend all over Instagram and Snapchat wearing your DIY Floral Headbands as the 'must-wear' item. Your Etsy shop blows up, selling out your stock. More $$ for coffee and spin class."});
 
 
-// let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-1)) + 1;
+// let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-2)) + 2;--this needs to be inside the change cards function, and will excluded start and finish cards
 
 // click on awe~some or groovy--it doesnt matter which button selected in the mvp version, either send you to the next card via some nifty js/jquery action
 var changeCards = function(){
@@ -49,11 +52,16 @@ let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-2)) + 2;
       console.log(randCardIdx);
         console.log(cardArray[randCardIdx]);
 
-  if(counter === 4 ){
+  if(counter === 4){
+//pick card index 1 0r 2 for game end
+ var gameEnd = Math.floor((Math.random() * 2) + 1);
     var card = cardArray[1];
 // choice of game-over cards
     $btnAction.off();
-    // add setTimeout here???
+    // $(".btn1").click(function(){
+        $('button').fadeOut(6000);
+    // });
+    // add setTimeout here??? and nicer looking you lost.....
     alert("you Lost :(");
   } else {
     var card = cardArray[randCardIdx];
@@ -85,7 +93,7 @@ let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-2)) + 2;
     var imgSrc = card.cardImg;
       var productImg = $('#product_img');
       productImg.attr("src", imgSrc);
-
+//remove the card after it has been used---no repeats
 cardArray.splice(randCardIdx,1);
   })
 // ??start throu gh the array of objects, then populate the html with the corrolating info

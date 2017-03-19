@@ -120,7 +120,7 @@ margin-left: -30;*/
   border-radius: 50px;
 }
 #button_holder {
-    margin-left: 62px;
+ margin-left: 62px;
 }
 #button1 {
   height: 34px;
@@ -139,33 +139,37 @@ margin-left: -30;*/
   height: 34px;
   width: 244px;
   font-size: 1.3em;
-
   margin: 6px 5px 5px 10px;
   background-color: #95989a;
   border-radius: 15px;
   border: 3px solid white;
   box-shadow: 0 8px 8px 0 grey;
-    text-align: center;
+  text-align: center;
 }
 
 #money{
   background-color: #95989a;
-
-
-    margin-left: 11px;
-
-    margin-top: 6px;
-
-/*  font-family: Avenir, Arial, Helvetica;
-* margin: 6px 5px 5px 79px;
-*/  height: 34px;
+  margin-left: 11px;
+  margin-top: 6px;
+  /*  font-family: Avenir, Arial, Helvetica;
+  * margin: 6px 5px 5px 79px;
+*/height: 34px;
   width: 234px;
   font-size: 1.3em;
   text-align: center;
-  border-radius: none;
-  border: 3px solid white;
-/*  box-shadow: 0 8px 8px 0 grey;
+  border-radius: 5px;
+÷/*  box-shadow: 0 8px 8px 0 grey;
 */}
+
+footer {
+  background-color: #95989a;
+  clear: both;
+
+}
+#lose {
+  font-size: 240px;
+  color: black;
+}
 
 
 
