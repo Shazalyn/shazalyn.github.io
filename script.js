@@ -70,7 +70,7 @@ let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-3)) + 3;
             height: '150px',
             width: '150px'
             });
-          $('button').fadeOut(10000);
+          // $('button').fadeOut(10000);
       }
     $btnAction.off();
     // OLD FADE OUTON CLICK
