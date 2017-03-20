@@ -59,6 +59,7 @@ let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-3)) + 3;
     var card = cardArray[gameEnd];
           if(gameEnd === 1){
       // LOSE
+
             $('button').fadeOut(8000);
           } else {
       // WIN
