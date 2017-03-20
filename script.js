@@ -37,6 +37,7 @@ cardArray.push({cardName:'shorts', cardImg:'images/jeans.png', button1: "jean sh
 
   cardArray.push({cardName: 'floral', cardImg: 'images/floral.png', button1: "sweet", button2:  "incredible", budgetAmt: 800, caption: "Pics of your girl-squad trend all over Instagram and Snapchat wearing your DIY Floral Headbands as the 'must-wear' item. Your Etsy shop blows up, selling out your stock. More $$ for coffee and spin class."});
 
+cardArray.push({cardName:'headliner', cardImg:'images/baby.png', button1: "cool", button2: "meh",budgetAmt: 900, caption: "The headliner gets pregnant and cancels. Score a partial refund."});
 
 // let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-2)) + 2;--this needs to be inside the change cards function, and will excluded start and finish cards
 
