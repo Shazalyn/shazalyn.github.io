@@ -125,9 +125,9 @@ margin-left: -30;*/
 }
 #button1 {
   height: 34px;
-  width: 244px;
+  width: 200px;
   font-size: 1.3em;
-  margin: 10px 5px 5px 10px;
+  margin: 10px 5px 5px 31px;
   background-color: #95989a;
   text-align: center;
   border-radius: 15px;
@@ -142,9 +142,9 @@ button:active{
 
 #button2 {
   height: 34px;
-  width: 244px;
+  width: 200px;
   font-size: 1.3em;
-  margin: 6px 5px 5px 10px;
+  margin: 6px 5px 5px 31px;
   background-color: #95989a;
   border-radius: 15px;
   border: 3px solid white;
