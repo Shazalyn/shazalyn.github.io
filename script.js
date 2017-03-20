@@ -25,7 +25,13 @@ $(document).ready(function($) {
 
   cardArray.push({cardName:'game_over',cardImg:'images/clone.png',button1:"YOU", button2:"LOSE !!!", budgetAmt: " " + 0 + " you lose", caption: "You are rockin’ the on trend red 80’s crop T you scored from the swap meet at the Rose Bowl, paired with the  ultimate hip hugger denim shorts. OMG-your male dopplegänger just strolled by in EXACTLY the same outfit :|"});
 
-  cardArray.push({cardName:'bestest_outfit',cardImg:'images/bestOutfit.png',button1:"YOU", button2:"WIN !!!", budgetAmt: 2100, caption: "Congrats!!!!! You made it throught the first day of Cochella in a great outfit, with no drama, no outfit twins & $$$ left over."});
+  cardArray.push({cardName:'game_over',cardImg:'images/redCrop.png',button1:"YOU", button2:"LOSE !!!", budgetAmt: " " + 0 + " you lose", caption: "You are rockin’ the on trend red 80’s crop T you scored from the swap meet at the Rose Bowl, paired with the  ultimate hip hugger denim shorts. OMG-your male dopplegänger just strolled by in EXACTLY the same outfit :|"});
+
+
+  cardArray.push({cardName:'bestest_outfit',cardImg:'images/bestOutfit.png',button1:"YOU", button2:"WIN !!!", budgetAmt: 2100, caption: "Congrats!!!!! You made it throught the first day of Cochella in a great outfit, with no drama, no outfit twins and $$$ left over."});
+
+  cardArray.push({cardName:'bestest_outfit',cardImg:'images/flash.png',button1:"YOU", button2:"WIN !!!", budgetAmt: 2100, caption: "Congrats!!!!! You made it throught the first day of Cochella in a great outfit, with no drama, no outfit twins and $$$ left over."});
+
 
   cardArray.push({cardName:'breakdown',cardImg:'images/pinkBus.png',button1:"bummer",button2:"what-evahs",budgetAmt: 600, caption: "The Bus overheats just outside of Palm Springs. Spend 50% of your budget on car repairs. (WTF is an air-cooled engine, anyways?)"});
 
@@ -33,11 +39,14 @@ $(document).ready(function($) {
 
   cardArray.push({cardName:'molly',cardImg:'images/pills.png',button1:"impaired",button2:"cured",budgetAmt: 400, caption: "You have a bit of a headache from the kick-off party at the Tiki bar last night. Grab an aspirin from the Besties purse. OOPS — That wasn’t aspirin! "});
 
-cardArray.push({cardName:'shorts', cardImg:'images/jeans.png', button1: "jean shorts", button2: "cut-off mom jeans",budgetAmt: 300, caption: "Choices, choices, choices. Irony or the tried and true, blue standard?"});
+cardArray.push({cardName:'shorts', cardImg:'images/jeans.png', button1: "jean shorts", button2: "cut-off mom jeans",budgetAmt: 300, caption: "Choices, choices, choices. Irony (mom jeans) or the tried and true, blue standard?"});
 
   cardArray.push({cardName: 'floral', cardImg: 'images/floral.png', button1: "sweet", button2:  "incredible", budgetAmt: 800, caption: "Pics of your girl-squad trend all over Instagram and Snapchat wearing your DIY Floral Headbands as the 'must-wear' item. Your Etsy shop blows up, selling out your stock. More $$ for coffee and spin class."});
 
-cardArray.push({cardName:'headliner', cardImg:'images/baby.png', button1: "cool", button2: "meh",budgetAmt: 900, caption: "The headliner gets pregnant and cancels. Score a partial refund."});
+cardArray.push({cardName:'bag', cardImg:'images/bag.png', button1: "unbelievable", button2: "twins !!!!",budgetAmt: 200, caption: "OMG--she has the same 'custom' fringed bag you spent your rent money on."});
+
+cardArray.push({cardName:'headliner', cardImg:'images/baby.png', button1: "cool", button2: "meh",budgetAmt: 900, caption: "The headliner gets pregnant and cancels. Score a partial refund. More money for shoes!!!!"});
+
 
 // let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-2)) + 2;--this needs to be inside the change cards function, and will excluded start and finish cards
 
@@ -48,17 +57,18 @@ var counter = 0;
   $btnAction.click(function(event){
       // console.log("Clicked!");
 
-let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-3)) + 3;
+let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-5)) + 5;
   counter++;
       console.log(randCardIdx);
-        console.log(cardArray[randCardIdx]);
+        // console.log(cardArray[randCardIdx]);
 
 // choice of game-over cards
-  if(counter === 5){
+  if(counter === 6){
 //pick card index 1 0r 2 for game end
- var gameEnd = Math.floor((Math.random() * 2) + 1);
+ var gameEnd = Math.floor((Math.random() * 4) + 1);
     var card = cardArray[gameEnd];
-          if(gameEnd === 1){
+          // if(gameEnd === 1){
+             if(gameEnd === 1||2){
       // LOSE
 
             $('button').fadeOut(8000);
@@ -71,7 +81,7 @@ let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-3)) + 3;
             height: '150px',
             width: '150px'
             });
-          // $('button').fadeOut(10000);
+          $('button').fadeOut(14000);
       }
     $btnAction.off();
     // OLD FADE OUTON CLICK
@@ -85,25 +95,24 @@ let randCardIdx = Math.floor(Math.random() * ((cardArray.length)-3)) + 3;
   }
 
     var newCaption = card.caption;
-
-      console.log(newCaption);
+      // console.log(newCaption);
     var captionDiv = $('#caption_background');
-      console.log(captionDiv);
+      // console.log(captionDiv);
     captionDiv.text(newCaption);
 
     var button1Text =card.button1;
-      console.log("button1 tEXT: ", button1Text);
+      // console.log("button1 tEXT: ", button1Text);
         // var button1 = $('#button1');
         // button1.text(button1Text);
         $('#button1').text(button1Text);
 
     var button2Text =card.button2;
-      console.log("button2 tEXT: ", button2Text);
+      // console.log("button2 tEXT: ", button2Text);
         var button2 = $('#button2');
         button2.text(button2Text);
 
     var budgetText = card.budgetAmt;
-      console.log("money amount: ", budgetText);
+      // console.log("money amount: ", budgetText);
       $('#money').text("budget left $ " + budgetText);
 
 
