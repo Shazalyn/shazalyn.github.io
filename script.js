@@ -28,9 +28,9 @@ $(document).ready(function($) {
   cardArray.push({cardName:'game_over',cardImg:'images/redCrop.png',button1:"YOU", button2:"LOSE !!!", budgetAmt: " " + 0 + " you lose", caption: "You are rockin’ the on trend red 80’s crop T you scored from the swap meet at the Rose Bowl, paired with the  ultimate hip hugger denim shorts. OMG-your male dopplegänger just strolled by in EXACTLY the same outfit :|"});
 
 
-  cardArray.push({cardName:'bestest_outfit',cardImg:'images/bestOutfit.png',button1:"YOU", button2:"WIN !!!", budgetAmt: 2100, caption: "Congrats!!!!! You made it throught the first day of Cochella in a great outfit, with no drama, no outfit twins and $$$ left over."});
+  cardArray.push({cardName:'bestest_outfit',cardImg:'images/bestOutfit.png',button1:"YOU", button2:"WIN !!!", budgetAmt: 2100, caption: "Congrats!!!!! You made it throught the first day of Coachella in a great outfit, with no drama, no outfit twins and $$$ left over."});
 
-  cardArray.push({cardName:'bestest_outfit',cardImg:'images/flash.png',button1:"YOU", button2:"WIN !!!", budgetAmt: 2100, caption: "Congrats!!!!! You made it throught the first day of Cochella in a great outfit, with no drama, no outfit twins and $$$ left over."});
+  cardArray.push({cardName:'bestest_outfit',cardImg:'images/flash.png',button1:"YOU", button2:"WIN !!!", budgetAmt: 2100, caption: "Congrats!!!!! You made it throught the first day of Coachella in a great outfit, with no drama, no outfit twins and $$$ left over."});
 
 
   cardArray.push({cardName:'breakdown',cardImg:'images/pinkBus.png',button1:"bummer",button2:"what-evahs",budgetAmt: 600, caption: "The Bus overheats just outside of Palm Springs. Spend 50% of your budget on car repairs. (WTF is an air-cooled engine, anyways?)"});
