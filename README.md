@@ -1,8 +1,8 @@
 # shazalyn.github.io�
 
-Cochella Roadtrip
+Coachella Road Trip
 
-You and your BFF are going to the ultimate boho-girl music festival "Cochella".
+You and your BFF are going to the ultimate boho-girl music festival, "Coachella".
 Recently your grandfather gave you his mint 70's VW camper bus. Talk about the 
 ultimate accessory for the hottest weekend! The quest for acquiring the most 
 inspirational outfit and experience, takes place over the course of a day. 
@@ -20,7 +20,7 @@ MoSCoW:
     .choice of 2 buttons    
         clever, funny, relevant words
     .great images of products or supporting images of card story
-    .visuals of Cochella in the Indio valley
+    .visuals of Coachella in the Indio valley
     .some obstacles to overcome ie bus breakdown , accidentally dropping molly
     .5 to 7 cards per play cycle
     .a win or lose finale based either $$ or the outfit seen on someone else
