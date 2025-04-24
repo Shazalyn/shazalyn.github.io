@@ -1,8 +1,8 @@
-Cochella Roadtrip
+Coachella Road Trip
 
-You and your BFF are going to the ultimate boho-girl music festival "Cochella".
+You and your BFF are going to the ultimate boho-girl music festival, "Coachella".
 Recently your grandfather gave you his mint 70's VW camper bus. Talk about the 
-ultimate accessory for the hotest weekend! The quest for accquiring the most 
+ultimate accessory for the hotest weekend! The quest for acquiring the most 
 inspirational outfit and experience, takes place over the course of a day. 
 Stay with-in budget, and get through the first exciting day in style. 
 
